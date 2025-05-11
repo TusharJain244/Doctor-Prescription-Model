@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor's Prescription System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Decorative Background Images -->
+        <div class="background-image left"></div>
+        <div class="background-image right"></div>
+
+        <!-- Doctor Information -->
+        <div class="doctor-info">
+            <p><strong>Dr. ABC Jain</strong></p>
+            <p>MD, MBBS </p>
+        </div>
+
+        <h1>Doctor's Prescription</h1>
+        
+        <!-- Patient Information -->
+        <div class="patient-info">
+            <h2>Patient Information</h2>
+            <div class="input-group">
+                <input type="text" id="patientName" placeholder="Patient Name">
+                <input type="number" id="patientAge" placeholder="Age">
+                <input type="date" id="date">
+            </div>
+        </div>
+
+        <!-- Medicine Selection Area -->
+        <div class="medicine-selection">
+            <h2>Select Medicines</h2>
+            <div class="dropdown-container">
+                <select id="medicineDropdown" class="medicine-dropdown">
+                    <option value="">Select Medicine</option>
+                </select>
+                <button id="addMedicine" class="add-btn">Add Medicine</button>
+            </div>
+        </div>
+
+        <!-- Prescription List -->
+        <div class="prescription-list">
+            <h2>Prescribed Medicines</h2>
+            <div id="selectedMedicines" class="selected-medicines">
+                <!-- Selected medicines will appear here -->
+            </div>
+            <button id="printButton" class="print-button">Print Prescription</button>
+        </div>
+    </div>
+
+    <!-- Clinic Timings -->
+    <footer class="clinic-timings">
+        <h2>Clinic Timings</h2>
+        <p>Monday to Saturday: 9:00 AM - 6:00 PM</p>
+        <p>Sunday: Closed</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
